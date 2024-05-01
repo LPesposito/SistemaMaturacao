@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Sistemas de Maturação</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Cadastre Sua Fazenda</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>coloque o nome da sua fazenda e seu email</span>
+                <input type="text" placeholder="nome">
+                <input type="email" placeholder="Email">
+                <button>Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sistema de Maturação</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Digite os dados abaixo</span>
+                <input type="date" placeholder="Data de Plantio">
+                <input type="text" placeholder="Condições">
+                <a href="#">Ver Resultados Salvos?</a>
+                <button>Resultado</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Ver Resultado!</h1>
+                    <p>Insira os dados e veja a melhor data para corte!</p>
+                    <button class="hidden" id="login">Inserir dados</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Não cadastrou sua fazenda?</h1>
+                    <p>Registre sua fazenda no nosso banco de dados</p>
+                    <button class="hidden" id="register">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>
