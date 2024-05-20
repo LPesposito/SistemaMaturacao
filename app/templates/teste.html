@@ -1,0 +1,8 @@
+{% block content %}
+    <h1>Testes</h1>
+    <p>{{fazendas}}</p>
+    {% for fazenda in fazendas %}
+    <p>{{fazenda.nome}}</p>
+    {% endfor %}
+{% endblock %}
+    
