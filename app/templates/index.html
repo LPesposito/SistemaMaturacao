@@ -16,11 +16,7 @@
             <form action="{{ url_for('index') }}" method="POST">
                 {{ form.hidden_tag() }}
                 <h1>Cadastre Sua Fazenda</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+                
                 <span>coloque o nome da sua fazenda e seu email</span>
                 {{ form.nome(size=32, placeholder='Nome') }}
                 {{ form.email(size=32, placeholder='Email') }}
@@ -30,11 +26,7 @@
         <div class="form-container sign-in">
             <form>
                 <h1>Sistema de Maturação</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+                
                 <span>Digite os dados abaixo</span>
                 <input type="date" placeholder="Data de Plantio">
                 <input type="text" placeholder="Condições">
