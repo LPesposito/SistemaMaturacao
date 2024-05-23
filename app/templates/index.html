@@ -29,11 +29,17 @@
                 
                 <span>Digite os dados abaixo</span>
                 <input type="date" placeholder="Data de Plantio">
-                <input type="text" placeholder="Condições">
+                <select id="condicoes" name="condicoes" multiple required>
+                    <option value="seca">Seca</option>
+                    <option value="umida">Úmida</option>
+                    <option value="normal">Normal</option>
+                    <option value="temperatura_alta">Temperatura Alta</option>
+                    <option value="temperatura_baixa">Temperatura Baixa</option>
+                </select>
                 <a href="#">Ver Resultados Salvos?</a>
                 <button>Resultado</button>
             </form>
-        </div>
+        </div><!--form-container sign-in-->
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
