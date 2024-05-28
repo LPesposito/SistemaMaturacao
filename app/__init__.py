@@ -8,5 +8,5 @@ app.config['SECRET_KEY'] = 'batata'
 
 db = SQLAlchemy(app)
 
-from.models import Fazenda
+from.models import Fazendas
 from.routes import routes

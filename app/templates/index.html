@@ -24,21 +24,18 @@
             </form>
         </div>
         <div class="form-container sign-in">
-            <form>
+            <form action="{{ url_for('index') }}" method="POST">
+                {{ result.hidden_tag() }}
                 <h1>Sistema de Maturação</h1>
                 
                 <span>Digite os dados abaixo</span>
-                <input type="date" placeholder="Data de Plantio">
-                <select id="condicoes" name="condicoes" multiple required>
-                    <option value="seca">Seca</option>
-                    <option value="umida">Úmida</option>
-                    <option value="normal">Normal</option>
-                    <option value="temperatura_alta">Temperatura Alta</option>
-                    <option value="temperatura_baixa">Temperatura Baixa</option>
-                </select>
+                {{ result.data_plantio() }}
+                {{ result.condicao() }}
                 <a href="#">Ver Resultados Salvos?</a>
-                <button>Resultado</button>
+                {{ result.submit() }}
+                <p>{{ resultado }}</p>
             </form>
+            
         </div><!--form-container sign-in-->
         <div class="toggle-container">
             <div class="toggle">

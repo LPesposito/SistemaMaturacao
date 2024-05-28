@@ -9,3 +9,4 @@ class Fazenda(db.Model):
     
     def __repr__(self): 
         return f'Fazenda: {self.nome}, Registro: {self.id}'
+
