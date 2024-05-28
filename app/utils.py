@@ -22,4 +22,4 @@ def calcular_dia_colheita(data_plantio, condicao):
     
     dia_colheita = data_plantio + timedelta(days=dias)
     
-    return dia_colheita
+    return dia_colheita.strftime("%d/%m/%Y")
